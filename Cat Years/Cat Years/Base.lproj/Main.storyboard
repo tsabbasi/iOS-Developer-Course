@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cat_Years" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-sB-3qE">
+                                <rect key="frame" x="227" y="30" width="146" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="COI-Fh-MR3"/>
+                                    <constraint firstAttribute="width" constant="146" id="Pg3-xD-l6B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.41670949839999999" blue="0.87528268909999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your cat's age?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1As-TK-qlW">
+                                <rect key="frame" x="201" y="113" width="199" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="7RT-1I-Wc0"/>
+                                    <constraint firstAttribute="height" constant="31" id="yHu-e2-2wG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uem-fS-Ga7">
+                                <rect key="frame" x="252" y="152" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Kcj-WO-G2X"/>
+                                    <constraint firstAttribute="width" constant="97" id="eUJ-YI-AC6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq7-HU-wR6">
+                                <rect key="frame" x="230" y="190" width="141" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="96X-Fh-EPB"/>
+                                    <constraint firstAttribute="height" constant="30" id="pFp-jf-Yt8"/>
+                                </constraints>
+                                <state key="normal" title="Find age in cat years"/>
+                                <connections>
+                                    <action selector="findAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4gR-0j-08b"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="8kV-qX-HaV">
+                                <rect key="frame" x="180" y="269" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="EJT-TB-5Xu"/>
+                                    <constraint firstAttribute="height" constant="128" id="RiU-gF-ccm"/>
+                                    <constraint firstAttribute="width" constant="240" id="ZzN-o8-uaI"/>
+                                    <constraint firstAttribute="width" constant="240" id="edw-4v-paF"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EJT-TB-5Xu"/>
+                                        <exclude reference="ZzN-o8-uaI"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUp-65-ak7">
+                                <rect key="frame" x="20" y="228" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="AW7-uE-Lc3"/>
+                                    <constraint firstAttribute="width" constant="122" id="Z8c-GH-kHf"/>
+                                    <constraint firstAttribute="width" constant="42" id="jzq-Mn-6xN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Z8c-GH-kHf"/>
+                                        <exclude reference="jzq-Mn-6xN"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oq7-HU-wR6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0rt-YN-cA3"/>
+                            <constraint firstItem="rUp-65-ak7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4h9-x2-wLu"/>
+                            <constraint firstItem="Uem-fS-Ga7" firstAttribute="top" secondItem="1As-TK-qlW" secondAttribute="bottom" constant="8" id="7X6-Mk-mcm"/>
+                            <constraint firstItem="Awg-sB-3qE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9dZ-3Z-gUi"/>
+                            <constraint firstItem="8kV-qX-HaV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AHk-RZ-DfY"/>
+                            <constraint firstItem="8kV-qX-HaV" firstAttribute="top" secondItem="rUp-65-ak7" secondAttribute="bottom" constant="20" id="HJW-Dj-GtN"/>
+                            <constraint firstItem="8kV-qX-HaV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jlb-xO-amy"/>
+                            <constraint firstItem="8kV-qX-HaV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ktr-8t-9tG"/>
+                            <constraint firstItem="8kV-qX-HaV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U9k-JI-ZK0"/>
+                            <constraint firstItem="Uem-fS-Ga7" firstAttribute="top" secondItem="Awg-sB-3qE" secondAttribute="bottom" constant="8" id="WEA-n6-lq2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8kV-qX-HaV" secondAttribute="bottom" constant="20" id="a70-QY-CYX"/>
+                            <constraint firstItem="1As-TK-qlW" firstAttribute="top" secondItem="Awg-sB-3qE" secondAttribute="bottom" constant="20" id="adK-pr-TQa"/>
+                            <constraint firstItem="rUp-65-ak7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dvZ-4E-pxN"/>
+                            <constraint firstItem="Uem-fS-Ga7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="guf-BQ-8nT"/>
+                            <constraint firstItem="1As-TK-qlW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k9I-Zw-eyg"/>
+                            <constraint firstItem="rUp-65-ak7" firstAttribute="top" secondItem="oq7-HU-wR6" secondAttribute="bottom" constant="8" id="m1Q-uD-nwE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8kV-qX-HaV" secondAttribute="bottom" constant="20" id="nib-6D-1Q7"/>
+                            <constraint firstItem="oq7-HU-wR6" firstAttribute="top" secondItem="Uem-fS-Ga7" secondAttribute="bottom" constant="8" id="qVR-Fi-wSh"/>
+                            <constraint firstItem="Awg-sB-3qE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="qWd-Z2-1gE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rUp-65-ak7" secondAttribute="trailing" id="rJG-yL-m3b"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WEA-n6-lq2"/>
+                                <exclude reference="AHk-RZ-DfY"/>
+                                <exclude reference="Ktr-8t-9tG"/>
+                                <exclude reference="U9k-JI-ZK0"/>
+                                <exclude reference="a70-QY-CYX"/>
+                                <exclude reference="nib-6D-1Q7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="catAgeTextField" destination="Uem-fS-Ga7" id="A2V-P5-xYn"/>
+                        <outlet property="resultLabel" destination="rUp-65-ak7" id="5go-fw-zjQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat.png" width="500" height="433"/>
+    </resources>
+</document>
