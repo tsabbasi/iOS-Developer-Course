@@ -57,19 +57,25 @@
                                     <action selector="guess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQz-wj-sLn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNM-X6-JdM">
-                                <rect key="frame" x="200" y="289" width="200" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNM-X6-JdM">
+                                <rect key="frame" x="20" y="289" width="560" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Ozo-zO-zSS"/>
-                                    <constraint firstAttribute="height" constant="21" id="hfm-gK-874"/>
+                                    <constraint firstAttribute="height" constant="41" id="hfm-gK-874"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ozo-zO-zSS"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kNM-X6-JdM" secondAttribute="trailing" id="91l-Qz-TQ7"/>
                             <constraint firstItem="xmt-uw-vTz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E2G-Jk-dUk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sYQ-pG-4qS" secondAttribute="trailing" id="QR9-gK-9X4"/>
                             <constraint firstItem="DDB-4y-a3O" firstAttribute="top" secondItem="sYQ-pG-4qS" secondAttribute="bottom" constant="10" id="SIL-NT-sar"/>
@@ -82,6 +88,7 @@
                             <constraint firstItem="sYQ-pG-4qS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="h0i-ka-xyr"/>
                             <constraint firstItem="YZI-Sl-vDV" firstAttribute="top" secondItem="DDB-4y-a3O" secondAttribute="bottom" constant="10" id="hKo-bO-8lW"/>
                             <constraint firstItem="kNM-X6-JdM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lSN-qV-LFd"/>
+                            <constraint firstItem="kNM-X6-JdM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tg3-sw-Qfh"/>
                             <constraint firstItem="YZI-Sl-vDV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uSa-ag-Vg5"/>
                         </constraints>
                         <variation key="default">

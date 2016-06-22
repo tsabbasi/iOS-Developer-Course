@@ -22,14 +22,17 @@ class ViewController: UIViewController {
         
         print(randomNumber)
         
-        if userGuessTextField == randomNumber {
+        if userGuessTextField.text == randomNumber && userGuessTextField.text != "" {
             
             resultLabel.text = "Good Job! You are correct."
             
+        } else if userGuessTextField.text == "" {
+            
+            resultLabel.text = "Please enter your guess above!"
+            
         } else {
-            
-            resultLabel.text = "Sorry, the correct answer was: \(randomNumber)"
-            
+        
+            resultLabel.text = "Sorry, the correct answer was \(randomNumber)!"
         }
         
     }
