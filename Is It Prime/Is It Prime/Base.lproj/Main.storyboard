@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Is_It_Prime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shy-zd-NYV">
+                                <rect key="frame" x="221" y="40" width="159" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="FvI-hO-kDl"/>
+                                    <constraint firstAttribute="width" constant="159" id="snz-wO-m8O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a number in the box" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xH-oi-ViI">
+                                <rect key="frame" x="202" y="98" width="197" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="M8D-za-CCd"/>
+                                    <constraint firstAttribute="width" constant="197" id="hd6-Xr-tLX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. 17" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmQ-1c-pL3">
+                                <rect key="frame" x="252" y="129" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="KXC-ME-tUG"/>
+                                    <constraint firstAttribute="height" constant="30" id="hoS-af-fuA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZN-bW-dY1">
+                                <rect key="frame" x="270" y="169" width="61" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="KE2-Iv-BXd"/>
+                                    <constraint firstAttribute="height" constant="30" id="N1a-zF-ISS"/>
+                                </constraints>
+                                <state key="normal" title="Find out!"/>
+                                <connections>
+                                    <action selector="findOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dri-0N-HOD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXW-7n-dl3">
+                                <rect key="frame" x="20" y="214" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5ED-pS-czz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cZN-bW-dY1" firstAttribute="top" secondItem="AmQ-1c-pL3" secondAttribute="bottom" constant="10" id="0pC-um-w6b"/>
+                            <constraint firstItem="Shy-zd-NYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5vX-3N-fMe"/>
+                            <constraint firstItem="AmQ-1c-pL3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AVL-Li-VZQ"/>
+                            <constraint firstItem="4xH-oi-ViI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LYt-DO-1mU"/>
+                            <constraint firstItem="cZN-bW-dY1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yzl-NQ-Voe"/>
+                            <constraint firstItem="Shy-zd-NYV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ahe-LF-oIG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yXW-7n-dl3" secondAttribute="trailing" id="gtc-fh-9Fw"/>
+                            <constraint firstItem="4xH-oi-ViI" firstAttribute="top" secondItem="Shy-zd-NYV" secondAttribute="bottom" constant="10" id="h66-oB-XeZ"/>
+                            <constraint firstItem="AmQ-1c-pL3" firstAttribute="top" secondItem="4xH-oi-ViI" secondAttribute="bottom" constant="10" id="hwi-TL-Y6n"/>
+                            <constraint firstItem="yXW-7n-dl3" firstAttribute="top" secondItem="cZN-bW-dY1" secondAttribute="bottom" constant="15" id="jMd-zw-YMT"/>
+                            <constraint firstItem="yXW-7n-dl3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oee-Dl-aA0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="primeNumTextField" destination="AmQ-1c-pL3" id="gKm-3p-anl"/>
+                        <outlet property="resultLabel" destination="yXW-7n-dl3" id="MbD-Rj-Nsv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="387"/>
+        </scene>
+    </scenes>
+</document>
