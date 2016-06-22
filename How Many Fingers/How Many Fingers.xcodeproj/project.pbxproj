@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C49765E61D1A0DD900BE4300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49765E51D1A0DD900BE4300 /* AppDelegate.swift */; };
+		C49765E81D1A0DD900BE4300 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49765E71D1A0DD900BE4300 /* ViewController.swift */; };
+		C49765EB1D1A0DD900BE4300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49765E91D1A0DD900BE4300 /* Main.storyboard */; };
+		C49765ED1D1A0DD900BE4300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49765EC1D1A0DD900BE4300 /* Assets.xcassets */; };
+		C49765F01D1A0DD900BE4300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49765EE1D1A0DD900BE4300 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C49765E21D1A0DD900BE4300 /* How Many Fingers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "How Many Fingers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49765E51D1A0DD900BE4300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C49765E71D1A0DD900BE4300 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C49765EA1D1A0DD900BE4300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C49765EC1D1A0DD900BE4300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C49765EF1D1A0DD900BE4300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C49765F11D1A0DD900BE4300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C49765DF1D1A0DD900BE4300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C49765D91D1A0DD900BE4300 = {
+			isa = PBXGroup;
+			children = (
+				C49765E41D1A0DD900BE4300 /* How Many Fingers */,
+				C49765E31D1A0DD900BE4300 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C49765E31D1A0DD900BE4300 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C49765E21D1A0DD900BE4300 /* How Many Fingers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C49765E41D1A0DD900BE4300 /* How Many Fingers */ = {
+			isa = PBXGroup;
+			children = (
+				C49765E51D1A0DD900BE4300 /* AppDelegate.swift */,
+				C49765E71D1A0DD900BE4300 /* ViewController.swift */,
+				C49765E91D1A0DD900BE4300 /* Main.storyboard */,
+				C49765EC1D1A0DD900BE4300 /* Assets.xcassets */,
+				C49765EE1D1A0DD900BE4300 /* LaunchScreen.storyboard */,
+				C49765F11D1A0DD900BE4300 /* Info.plist */,
+			);
+			path = "How Many Fingers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C49765E11D1A0DD900BE4300 /* How Many Fingers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C49765F41D1A0DD900BE4300 /* Build configuration list for PBXNativeTarget "How Many Fingers" */;
+			buildPhases = (
+				C49765DE1D1A0DD900BE4300 /* Sources */,
+				C49765DF1D1A0DD900BE4300 /* Frameworks */,
+				C49765E01D1A0DD900BE4300 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "How Many Fingers";
+			productName = "How Many Fingers";
+			productReference = C49765E21D1A0DD900BE4300 /* How Many Fingers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C49765DA1D1A0DD900BE4300 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Web N App";
+				TargetAttributes = {
+					C49765E11D1A0DD900BE4300 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C49765DD1D1A0DD900BE4300 /* Build configuration list for PBXProject "How Many Fingers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C49765D91D1A0DD900BE4300;
+			productRefGroup = C49765E31D1A0DD900BE4300 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C49765E11D1A0DD900BE4300 /* How Many Fingers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C49765E01D1A0DD900BE4300 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49765F01D1A0DD900BE4300 /* LaunchScreen.storyboard in Resources */,
+				C49765ED1D1A0DD900BE4300 /* Assets.xcassets in Resources */,
+				C49765EB1D1A0DD900BE4300 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C49765DE1D1A0DD900BE4300 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49765E81D1A0DD900BE4300 /* ViewController.swift in Sources */,
+				C49765E61D1A0DD900BE4300 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C49765E91D1A0DD900BE4300 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C49765EA1D1A0DD900BE4300 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C49765EE1D1A0DD900BE4300 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C49765EF1D1A0DD900BE4300 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C49765F21D1A0DD900BE4300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C49765F31D1A0DD900BE4300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C49765F51D1A0DD900BE4300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "How Many Fingers/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mywebnapp.How-Many-Fingers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C49765F61D1A0DD900BE4300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "How Many Fingers/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mywebnapp.How-Many-Fingers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C49765DD1D1A0DD900BE4300 /* Build configuration list for PBXProject "How Many Fingers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49765F21D1A0DD900BE4300 /* Debug */,
+				C49765F31D1A0DD900BE4300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C49765F41D1A0DD900BE4300 /* Build configuration list for PBXNativeTarget "How Many Fingers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49765F51D1A0DD900BE4300 /* Debug */,
+				C49765F61D1A0DD900BE4300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C49765DA1D1A0DD900BE4300 /* Project object */;
+}
