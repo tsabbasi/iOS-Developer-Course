@@ -16,36 +16,46 @@ class ViewController: UIViewController {
     
     @IBAction func findOut(sender: AnyObject) {
         
-//        var isPrime = true
         
-        let number = Int(primeNumTextField.text!)
+        if let number = Int(primeNumTextField.text!) {
         
+            var isPrime = true
         
-        if number == 1 {
+            if number == 1 {
             
-//            isPrime = false
+                isPrime = false
             
-            resultLabel.text = "Your number is not a Prime!"
-            
-        }
-        
-        if number != 2 && number != 1 {
-            
-            for var i = 2; i < number; i++ {
-                
-                if number! % i == 0 {
-                    
-//                    isPrime = false
-                    
-                    resultLabel.text = "Your number is a Prime!"
-                    
-                }
-                
             }
+        
+            if number != 2 && number != 1 {
+            
+                for var i = 2; i < number; i++ {
+                
+                    if number % i == 0 {
+                    
+                        isPrime = false
+                    
+                    }
+                
+                }
+            
+            }
+        
+            if isPrime {
+            
+                resultLabel.text = "\(number) is prime!"
+            
+            } else {
+            
+                resultLabel.text = "\(number) is not prime"
+            
+            }
+        
+        } else {
+            
+            resultLabel.text = "Please enter a whole number"
             
         }
-        
-        
     }
     
     override func viewDidLoad() {

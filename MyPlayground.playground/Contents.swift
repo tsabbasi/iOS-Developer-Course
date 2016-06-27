@@ -2,7 +2,7 @@
 
 import UIKit
 
-var number = 47
+var number = 2
 
 var isPrime = true
 
