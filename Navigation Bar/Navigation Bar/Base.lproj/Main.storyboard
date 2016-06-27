@@ -24,10 +24,11 @@
                                     <constraint firstAttribute="height" constant="44" id="f48-sp-muY"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Navigation Bar" id="Ctm-Zy-3Eu">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="bur-Ul-oMN"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="rewind" id="K1I-sH-erO">
-                                            <color key="tintColor" red="0.4222485903" green="0.80418337790000005" blue="0.49134935410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <navigationItem title="Stopwatch" id="Ctm-Zy-3Eu">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="9Jk-vX-R8C">
+                                            <connections>
+                                                <action selector="play:" destination="BYZ-38-t0r" id="f9d-EZ-Svu"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -38,9 +39,43 @@
                                     <constraint firstAttribute="height" constant="44" id="6jJ-Ko-n0m"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Item" id="Rge-9t-ooQ"/>
+                                    <barButtonItem systemItem="stop" id="Rge-9t-ooQ">
+                                        <connections>
+                                            <action selector="reset:" destination="BYZ-38-t0r" id="o6y-85-qjW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LCJ-MB-Ljl"/>
+                                    <barButtonItem systemItem="pause" id="jVW-5A-K7i">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="ZNj-G1-DBo"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BrP-tO-osD">
+                                <rect key="frame" x="215" y="258" width="170" height="84"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4PE-bM-gSp">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="84"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5b-CE-k8C">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="84"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="84" id="2ZL-UZ-Jki"/>
+                                                    <constraint firstAttribute="width" constant="170" id="vPC-JE-SXA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="85"/>
+                                                <color key="textColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="5yH-Aq-3I3"/>
+                                    <constraint firstAttribute="width" constant="170" id="i9x-WK-jyB"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -48,13 +83,19 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Sfs-H0-wtO" secondAttribute="trailing" constant="-20" id="NjG-ec-bpw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="waG-SO-TVh" secondAttribute="trailing" constant="-20" id="TlY-eg-voy"/>
                             <constraint firstItem="Sfs-H0-wtO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Uh9-N1-EYZ"/>
+                            <constraint firstItem="BrP-tO-osD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wwz-A3-GVv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="waG-SO-TVh" secondAttribute="bottom" id="blK-W3-y3Y"/>
                             <constraint firstItem="waG-SO-TVh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="bxn-gh-Og2"/>
+                            <constraint firstItem="BrP-tO-osD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJA-cy-X5b"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timerLabel" destination="i5b-CE-k8C" id="tLy-QT-3jZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="440" y="315"/>
         </scene>
     </scenes>
 </document>
